@@ -21,7 +21,7 @@ public class Launcher {
         do {
             cmd = myObj.nextLine();
 
-            if ("quit".equals(cmd))
+            if (cmd.equals("quit"))
                 return;
             // fibo command
             else if ("fibo".equals(cmd))
