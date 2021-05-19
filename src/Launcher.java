@@ -20,8 +20,11 @@ public class Launcher {
 
         do {
             cmd = myObj.nextLine();
+
+            if ("quit".equals(cmd))
+                return;
             // fibo command
-            if ("fibo".equals(cmd))
+            else if ("fibo".equals(cmd))
             {
                 System.out.println("Please give an index");
                 int index = Integer.parseInt((myObj.nextLine()));
@@ -35,10 +38,8 @@ public class Launcher {
 
             }
 
-            else if (!"quit".equals(cmd))
+            else
                 System.out.println("Unknown command");
-            else if ("quit".equals(cmd))
-                System.exit(0);
         }
         while (true);
     }
