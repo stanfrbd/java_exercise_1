@@ -23,15 +23,14 @@ public class Launcher {
             if ("fibo".equals(cmd))
             {
                 System.out.println("Please give an index");
-                int index = Integer.parseInt((myObj.nextLine()));
+                int index = myObj.nextInt();
+                myObj.nextLine();
                 System.out.println(fibo(index));
             }
 
             else if ("freq".equals(cmd))
             {
                 System.out.println("Please give a file path");
-                String path = myObj.nextLine();
-
             }
 
             else
