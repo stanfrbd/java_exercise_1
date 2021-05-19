@@ -39,7 +39,7 @@ public class Launcher {
             else if (!"quit".equals(cmd))
                 System.out.println("Unknown command");
             else if ("quit".equals(cmd))
-                break;
+                System.exit(0);
         }
         while (true);
     }
