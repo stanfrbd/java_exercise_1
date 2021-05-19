@@ -12,12 +12,12 @@ public class Launcher {
 
     public static void main(String[] args) {
         System.out.println("Welcome!");
-        Scanner myObj = new Scanner(System.in);
-
         System.out.println("Enter a command");
-
+        Scanner myObj = new Scanner(System.in);
         String cmd;
+
         // System.out.println("entered cmd: " + cmd);
+
         do {
             cmd = myObj.nextLine();
             // fibo command
