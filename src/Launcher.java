@@ -14,17 +14,13 @@ public class Launcher {
     {
         System.out.println("Welcome!");
         Scanner myObj = new Scanner(System.in);
-        String cmd;
 
         // System.out.println("entered cmd: " + cmd);
-
-        do {
-            cmd = myObj.nextLine();
-
-            if (cmd.equals("quit"))
-                return;
+        String cmd = myObj.nextLine();
+        while (!cmd.equals("quit"))
+         {
             // fibo command
-            else if ("fibo".equals(cmd))
+            if ("fibo".equals(cmd))
             {
                 System.out.println("Please give an index");
                 int index = Integer.parseInt((myObj.nextLine()));
@@ -40,7 +36,7 @@ public class Launcher {
 
             else
                 System.out.println("Unknown command");
+            cmd = myObj.nextLine();
         }
-        while (true);
     }
 }
