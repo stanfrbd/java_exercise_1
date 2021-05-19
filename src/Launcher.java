@@ -10,7 +10,8 @@ public class Launcher {
             return fibo(n - 1) + fibo(n - 2);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         System.out.println("Welcome!");
         System.out.println("Enter a command");
         Scanner myObj = new Scanner(System.in);
@@ -21,11 +22,20 @@ public class Launcher {
         do {
             cmd = myObj.nextLine();
             // fibo command
-            if ("fibo".equals(cmd)) {
+            if ("fibo".equals(cmd))
+            {
                 System.out.println("Please give an index");
                 int index = Integer.parseInt((myObj.nextLine()));
                 System.out.println(fibo(index));
             }
+
+            else if ("freq".equals(cmd))
+            {
+                System.out.println("Please give a file path");
+                String path = myObj.nextLine();
+
+            }
+
             else if (!"quit".equals(cmd))
                 System.out.println("Unknown command");
         }
