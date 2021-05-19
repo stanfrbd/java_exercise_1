@@ -13,7 +13,6 @@ public class Launcher {
     public static void main(String[] args)
     {
         System.out.println("Welcome!");
-        System.out.println("Enter a command");
         Scanner myObj = new Scanner(System.in);
         String cmd;
 
